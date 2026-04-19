@@ -1,6 +1,13 @@
 # G-Memory Poster Demo
 
-This `demo/` package is a presentation-focused engineering layer built on top of the official G-Memory repository in [official_gmemory](../official_gmemory/README.md). It is meant for a course-project poster/demo setting where reliability, explainability, and visible reuse of the research code matter more than full benchmark reproduction.
+This `demo/` package is a presentation-focused engineering layer built on top of the official G-Memory repository. It is meant for a course-project poster/demo setting where reliability, explainability, and visible reuse of the research code matter more than full benchmark reproduction.
+
+## Start Here
+
+- [Latest verified results](./LATEST_RESULTS.md)
+- [Quickstart](./QUICKSTART.md)
+- [Main notebook](./GMemory_Poster_Demo.ipynb)
+- Published figures: [compare](./published/latest_compare.png), [memory flow](./published/latest_memory_flow.png), [architecture](./published/latest_architecture.png)
 
 ## What Was Reused
 
@@ -36,8 +43,14 @@ Why this choice:
 
 ## Setup
 
-1. Create or activate a Python environment.
-2. Install the demo dependencies:
+1. Bootstrap the official upstream repo into `official_gmemory/` if it is not already present:
+
+```bash
+python demo/scripts/bootstrap_official_repo.py
+```
+
+2. Create or activate a Python environment.
+3. Install the demo dependencies:
 
 ```bash
 pip install -r demo/requirements-demo.txt
@@ -53,7 +66,7 @@ export OPENAI_API_KEY="..."
 Notes:
 
 - The demo layer has a local fallback path and does not require `langchain_chroma` or `sentence_transformers` for mock mode.
-- The official repo is vendored locally under `official_gmemory/`.
+- This course-project repo keeps the demo layer separate from the authors' upstream repo. The expected local checkout path is `official_gmemory/`.
 
 ## Commands
 
@@ -93,6 +106,12 @@ Export a markdown case summary:
 python demo/scripts/export_case_summary.py --compare-json demo/cached_runs/<compare-file>.json
 ```
 
+Publish the latest compare run to stable GitHub-visible paths:
+
+```bash
+python demo/scripts/publish_demo_snapshot.py
+```
+
 ## How To Read The Outputs
 
 Successful live compare runs write a folder under `demo/outputs/` containing:
@@ -111,6 +130,14 @@ The JSON contains:
 - selected insight nodes
 - per-agent memory packets
 - runtime metadata
+
+For GitHub-friendly browsing, the latest published snapshot is copied to:
+
+- `demo/LATEST_RESULTS.md`
+- `demo/published/latest_compare.png`
+- `demo/published/latest_memory_flow.png`
+- `demo/published/latest_architecture.png`
+- `demo/published/latest_compare.json`
 
 ## Common Failure Cases
 

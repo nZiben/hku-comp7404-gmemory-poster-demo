@@ -3,6 +3,7 @@
 ## Install
 
 ```bash
+python demo/scripts/bootstrap_official_repo.py
 python -m venv .venv
 source .venv/bin/activate
 pip install -r demo/requirements-demo.txt
@@ -38,9 +39,11 @@ python demo/scripts/run_replay_demo.py
 ## Open The Notebook
 
 - [GMemory_Poster_Demo.ipynb](./GMemory_Poster_Demo.ipynb)
+- [Latest verified results](./LATEST_RESULTS.md)
 
 ## Where Files Go
 
 - Cached compare JSON: `demo/cached_runs/`
 - Fresh live outputs: `demo/outputs/`
 - Poster-ready example figures: `demo/assets/`
+- Stable GitHub-visible snapshot: `demo/published/`

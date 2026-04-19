@@ -11,7 +11,7 @@ This repository is built to make the method easy to show in a poster session:
 ## Open These First
 
 - [Latest verified results](demo/LATEST_RESULTS.md)
-- [Presenter quickstart](demo/QUICKSTART.md)
+ - [Quickstart](demo/QUICKSTART.md)
 - [Main notebook with outputs](demo/GMemory_Poster_Demo.ipynb)
 - [Full demo documentation](demo/README.md)
 

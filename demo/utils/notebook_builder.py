@@ -26,9 +26,11 @@ def build_notebook() -> dict:
     cells = [
         markdown_cell(
             "# G-Memory Poster Demo\n\n"
-            "This notebook is the presentation-friendly front end for the course-project demo layer. "
+            "This notebook is the self-contained front end for the course-project demo layer. "
             "It wraps the official G-Memory repository, keeps the task small enough for a laptop, "
-            "and exposes the retrieval pipeline in a way that is easy to explain live."
+            "and exposes the retrieval pipeline in a way that is easy to inspect. "
+            "The full repository with scripts, cached outputs, and documentation is here: "
+            "[hku-comp7404-gmemory-poster-demo](https://github.com/nZiben/hku-comp7404-gmemory-poster-demo)."
         ),
         markdown_cell(
             "## 1. Project Overview\n\n"
@@ -116,10 +118,10 @@ def build_notebook() -> dict:
             "arch_fig_path"
         ),
         markdown_cell(
-            "## 14. Final Presenter Takeaway\n\n"
+            "## 14. Final Takeaway\n\n"
             "The important point is not the absolute score of this tiny local run. "
             "It is that the official pipeline is being reused, the retrieval path is visible, "
-            "and the presenter has both a live mode and a replay-safe fallback."
+            "and the demo includes both a live mode and a replay-safe fallback."
         ),
     ]
 

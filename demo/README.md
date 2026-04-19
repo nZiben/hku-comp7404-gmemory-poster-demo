@@ -23,7 +23,7 @@ This `demo/` package is a presentation-focused engineering layer built on top of
 - Opt-in tracing for retrieved tasks, selected insights, interaction trajectories, and per-agent memory packets
 - A deterministic local mock backend for smoke tests and replay-safe demo generation
 - Replay mode, cached compare records, summary export, and poster-ready figures
-- A notebook, quickstart, presenter notes, and environment checks
+- A notebook, quickstart, environment checks, and stable published results
 
 ## Demo Modes
 
@@ -152,7 +152,7 @@ Open:
 
 - [GMemory_Poster_Demo.ipynb](./GMemory_Poster_Demo.ipynb)
 
-The notebook is designed to work as a guided walkthrough for the presenter and as grading evidence for how the official code was reused and instrumented.
+The notebook is designed to stand on its own as the main submission artifact and as grading evidence for how the official code was reused and instrumented.
 
 ## Attribution
 

@@ -1,0 +1,39 @@
+defaults:
+  task: pddl
+  mas_type: autogen
+  reasoning: io
+  model: demo-mock-gripper
+  warmup_task_indices:
+    - 30
+  target_task_index: 30
+  warmup_max_trials: 20
+  compare_max_trials: 11
+  successful_topk: 1
+  failed_topk: 0
+  insights_topk: 2
+  threshold: 0.0
+  hop: 1
+  use_projector: true
+  start_insights_threshold: 1
+  rounds_per_insights: 1
+  insights_point_num: 1
+
+mock:
+  model: demo-mock-gripper
+  warmup_task_indices:
+    - 30
+  target_task_index: 30
+  warmup_max_trials: 20
+  compare_max_trials: 11
+
+openai:
+  model: gpt-4o-mini
+  warmup_task_indices:
+    - 30
+  target_task_index: 30
+  warmup_max_trials: 20
+  compare_max_trials: 11
+
+notes:
+  primary_live_task: "PDDL gripper task 30, because it is fully local and easy to explain."
+  replay_safe_mode: "Mock backend with persisted memory and cached figures."

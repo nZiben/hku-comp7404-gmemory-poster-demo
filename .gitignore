@@ -1,0 +1,6 @@
+.venv/
+.demo_cache/
+official_gmemory/
+.DS_Store
+__pycache__/
+*.py[cod]

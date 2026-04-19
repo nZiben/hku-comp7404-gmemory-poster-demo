@@ -1,0 +1,20 @@
+[
+  {
+    "rule": "Carry two transferable objects before moving between rooms, because batching transfers reduces wasted travel.",
+    "score": 3,
+    "positive_correlation_tasks": [
+      "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. "
+    ],
+    "negative_correlation_tasks": []
+  },
+  {
+    "rule": "Reuse both grippers when possible, because parallel pickups shorten the full interaction trajectory.",
+    "score": 3,
+    "positive_correlation_tasks": [
+      "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. "
+    ],
+    "negative_correlation_tasks": []
+  }
+]
